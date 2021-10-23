@@ -7,26 +7,27 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Statement;
 
-import javax.xml.transform.Result;
-
 import com.lavesh.DBFactory.OracleDBFactory;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Connection con = null;
 		Statement st = null;
 		ResultSet rs = null;
+		
+		
+//implementation		
 
 		try {
 			OracleDBFactory.loadOracleDBDriver();
 			con = OracleDBFactory.getOracleDBConnection();
 			st = OracleDBFactory.getOracleDBStatement();
 			System.out.println("Enter Query: ");
-			boolean b = st.execute(br.readLine());
-
+			String q=br.readLine();
+			boolean b = st.execute(q);
 			int updateColumn = st.getUpdateCount();
 			if (b) {
 				rs = st.getResultSet();
