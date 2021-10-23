@@ -13,13 +13,19 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 
+		Main.OracleDB();
+
+
+	}
+	
+	public static void OracleDB() {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		Connection con = null;
 		Statement st = null;
 		ResultSet rs = null;
 		
 		
-//implementation		
+                       //implementation		
 
 		try {
 			OracleDBFactory.loadOracleDBDriver();
@@ -57,7 +63,6 @@ public class Main {
 				e2.printStackTrace();
 			}
 		}
-
 	}
 
 }
