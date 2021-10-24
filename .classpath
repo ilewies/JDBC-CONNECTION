@@ -7,5 +7,6 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/lavesh/Downloads/jar_files (1)/mysql-connector-java-5.1.23.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
