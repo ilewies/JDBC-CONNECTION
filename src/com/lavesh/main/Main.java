@@ -16,6 +16,7 @@ public class Main {
 		System.out.println("***********************");
 		System.out.println("1. Oracle db");
 		System.out.println("2. Mysql db");
+		System.out.println("3. H2 db");
 		System.out.println("Any key for exit");
 		System.out.println("***********************");
 
@@ -30,6 +31,11 @@ public class Main {
 		case 2:
 			System.out.println(" ***mysql*** ");
 			MysqlDB.getMysqlDB();
+			break;
+			
+		case 3:
+			System.out.println(" ***h2 db*** ");
+			H2DB.getH2DB();
 			break;
 		default:
 			System.out.println("...exited");
