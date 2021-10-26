@@ -1,7 +1,5 @@
 # JDBC-CONNECTION
 ***********************
-+1. Oracle db
-+2. Mysql db
-Any key for exit
+Aim: One Console handles multiple Database Vendors(oracle,mysql,h2,psql.....)
 ***********************
 (under construction)
