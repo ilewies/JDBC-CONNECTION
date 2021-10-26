@@ -7,7 +7,7 @@ import com.lavesh.DBInterface.DBInterface;
 import com.lavesh.DBimpl.PsqlDBimpl;
 
 public class PsqlDBFactory {
-	public static DBInterface dbpsql = new PsqlDBimpl();
+	private static DBInterface dbpsql = new PsqlDBimpl();
 
 	public static void loadPsqlDBDriver() throws Exception {
 		dbpsql.loadDriver();
