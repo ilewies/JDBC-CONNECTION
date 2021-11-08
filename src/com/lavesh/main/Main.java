@@ -12,7 +12,7 @@ import com.lavesh.DBFactory.OracleDBFactory;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		
+		System.out.println("...select database to connect...");
 		System.out.println("***********************");
 		System.out.println("1. Oracle db");
 		System.out.println("2. Mysql db");
